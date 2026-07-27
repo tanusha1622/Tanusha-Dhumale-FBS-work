@@ -1,0 +1,29 @@
+#include<stdio.h>
+void salary();
+int main()
+{
+	salary();
+}
+void salary()
+	{
+	
+	float basic =3000;
+	float da,ta,hra,total;
+	if(basic<=5000)
+	{
+		da = basic * 10/10;
+		ta = basic * 20/10;
+		hra = basic *25/100;
+	}
+	
+	else{
+		
+		da = basic * 15/100;
+		ta = basic * 25/100;
+		hra = basic * 30/100;
+		}
+		total = basic+da+ta+hra;
+		printf("Total Salary = %.2f",total);
+		
+		
+}
